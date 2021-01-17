@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { TaskCard } from './TaskCard/TaskCard'
 
-export const TaskList = ({ loading, taskList, setTaskList }) => {
+export const TaskList = ({ loading, taskList, changeTaskStatus }) => {
 
     const TaskListLayout = styled.div`
     grid-column: 2 / 5;
@@ -24,14 +24,6 @@ export const TaskList = ({ loading, taskList, setTaskList }) => {
     border: 0.1rem solid #6D6A6A;
     background-color: #606A6A;
     margin-bottom: 2rem;`
-
-    const changeTaskStatus = (taskId, moveTo) => {
-        const taskListCopy = [...taskList]
-        const taskToBeMoved = taskListCopy.find(x => x.taskId === taskId)
-
-        taskToBeMoved.status = moveTo
-        setTaskList(taskListCopy)
-    }
 
     const generateTaskColumns = () => {
 

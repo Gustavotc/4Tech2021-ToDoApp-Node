@@ -10,7 +10,6 @@ import { Save } from './Save/Save'
 export const TaskForm = ({ loading, submitNewTask }) => {
 
     const formValues = {
-        taskId: uniqid(),
         status: 'To Do',
         whatToDo: 'So, what are you up to?',
         selectedWho: 1,
