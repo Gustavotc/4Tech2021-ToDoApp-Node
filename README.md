@@ -29,7 +29,7 @@ To-Do List App
 
 - Donwload this repository
 - Open the project on Visual Code
-- Sinc with your own Firebase addres
+- Sinc with your own Firebase address
 - Run npm i 
 - Run npm start
 
